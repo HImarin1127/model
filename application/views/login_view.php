@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Employee Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <?php if (!empty($error)): ?>
+        <p style="color:red;"><?php echo $error; ?></p>
+    <?php endif; ?>
+    <form method="post" action="index.php?c=login&m=authenticate">
+        <label>Username: <input type="text" name="username"></label><br>
+        <label>Password: <input type="password" name="password"></label><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
